@@ -37,6 +37,17 @@ int main(){
         //Display resualts
         cout << "Race results \n";
         cout << "------------ \n\n";
+
+        cout << fixed << showpoint << setprecision(2);
+
+        //Determine the order the runners came in
+        //Order: 1st runner, 2nd runner, 3rd runner
+        if((time1 < time2) && (time1 < time3) && (time2 < time3))
+        {
+            cout << "1st place: "<< runner1 << "\t\t\t" << time1 << endl;
+            cout << "2nd place: "<< runner2 << "\t\t\t" << time2 << endl;
+            cout << "3rd place: "<< runner3 << "\t\t\t" << time3 << endl;
+        }
     }
 }
 
