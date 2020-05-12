@@ -22,5 +22,12 @@ int main(){
     cout << "Enter the runners time: ";
     cin >> time2;
 
+    cout << "\nName of Runner 3: ";
+    cin.ignore();
+
+    getline(cin, runner3);
+    cout << "Enter the runners time: ";
+    cin >> time3;
+    cout << endl;
 }
 
