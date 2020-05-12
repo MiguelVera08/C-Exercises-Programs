@@ -29,5 +29,14 @@ int main(){
     cout << "Enter the runners time: ";
     cin >> time3;
     cout << endl;
+
+
+    if (time1 < 0 || time2 <0 || time3 < 0) {
+        cout << "Running times cannot be negative. \n";
+    }else{
+        //Display resualts
+        cout << "Race results \n";
+        cout << "------------ \n\n";
+    }
 }
 
