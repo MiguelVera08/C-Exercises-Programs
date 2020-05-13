@@ -55,6 +55,14 @@ int main(){
             cout << "2nd place: "<< runner3 << "\t\t\t" << time3 << endl;
             cout << "3rd place: "<< runner2 << "\t\t\t" << time2 << endl;
         }
+
+        //Order: 2nd runner, 1st runner, 3rd runner
+        if((time2 < time1) && (time2 < time3) && (time1 < time3))
+        {
+            cout << "1st place: "<< runner2 << "\t\t\t" << time2 << endl;
+            cout << "2nd place: "<< runner1 << "\t\t\t" << time1 << endl;
+            cout << "3rd place: "<< runner3 << "\t\t\t" << time3 << endl;
+        }
     }
 }
 
