@@ -36,4 +36,15 @@ void getOrderDetails(int &order, int &stock, double &specialChgs){
 
     cout << "Enter the number of spools ordered: ";
     cin >> order;
+
+    while (order < 0)
+    {
+        cout << "Number must be greater than 0: ";
+        cin >> order;
+        cout << "\n";
+    }
+
+    cout << "Enter the available spools in stock: ";
+    cin >> stock;
+    cout << "\n";
 }
