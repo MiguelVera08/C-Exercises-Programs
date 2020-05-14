@@ -47,4 +47,16 @@ void getOrderDetails(int &order, int &stock, double &specialChgs){
     cout << "Enter the available spools in stock: ";
     cin >> stock;
     cout << "\n";
+
+    while (stock < 0)
+    {
+        cout << "Number must be greater than 0: ";
+        cin >> stock;
+        cout << "\n";
+    }
+
+    cout << "Are there any special shipping charges (per spool)\n",
+            cout << "above the regular $10.00 per spool rate (0 for none): ";
+    cin >> specialChgs;
+    cout << "\n";
 }
