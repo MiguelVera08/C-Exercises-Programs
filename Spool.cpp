@@ -10,3 +10,24 @@ const double UNIT_SPOOL_COST = 100.00, SHIPPING_CHARGE = 10.00;
 
 void getOrderDetails (int &, int &, double &);
 void processDisplayStatus (int,int, double = SHIPPING_CHARGE);
+
+int main(){
+
+    //Local variables
+    int ordered = 0;
+    int stock = 0;
+    double specialCharges = 0.0;
+
+    //Function prototypes
+    getOrderDetails(ordered, stock, specialCharges);
+    if (specialCharges != 0)
+    {
+        processDisplayStatus(ordered, stock, SHIPPING_CHARGE + specialCharges);
+    }
+    else
+    {
+        processDisplayStatus(ordered, stock, SHIPPING_CHARGE);
+    }
+
+    return 0;
+}
