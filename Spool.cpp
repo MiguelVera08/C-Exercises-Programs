@@ -31,3 +31,9 @@ int main(){
 
     return 0;
 }
+
+void getOrderDetails(int &order, int &stock, double &specialChgs){
+
+    cout << "Enter the number of spools ordered: ";
+    cin >> order;
+}
