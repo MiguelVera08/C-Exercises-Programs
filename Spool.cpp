@@ -93,4 +93,13 @@ void processDisplayStatus(int ordered,int stock, double shippingCharge){
     cout << "Spools ordered: " << ordered << "\n";
     cout << "Spools back ordered: " << bkOrder << "\n";
 
+    //Calculate orders in shipment
+
+    spoolsOrdered = ordered - bkOrder;
+    cout << "Spools in shipment: " << spoolsOrdered << "\n";
+    cout << "\n";
+
+    cout << "**Charges for this shipment**";
+    cout << "\n\n";
+
 }
