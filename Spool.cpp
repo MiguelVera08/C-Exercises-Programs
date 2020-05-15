@@ -112,4 +112,8 @@ void processDisplayStatus(int ordered,int stock, double shippingCharge){
     shipping = spoolsOrdered * shippingCharge;
     cout << "Shipping charges: $ " << shipping << endl;
 
+    //Calculate  order total
+    total = shipping + spoolTotal;
+    cout << "Total of shipment: $ " << total << "\n";
+
 }
