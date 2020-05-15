@@ -72,3 +72,7 @@ void getOrderDetails(int &order, int &stock, double &specialChgs){
         }
     }
 }
+
+void processDisplayStatus(int ordered,int stock, double shippingCharge){
+
+}
