@@ -102,4 +102,9 @@ void processDisplayStatus(int ordered,int stock, double shippingCharge){
     cout << "**Charges for this shipment**";
     cout << "\n\n";
 
+    //Calculate spool charges
+
+    spoolTotal = spoolsOrdered * UNIT_SPOOL_COST;
+    cout << "Spool charges before shipping fees: $ " << spoolTotal << endl;
+
 }
