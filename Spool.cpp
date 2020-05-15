@@ -75,4 +75,22 @@ void getOrderDetails(int &order, int &stock, double &specialChgs){
 
 void processDisplayStatus(int ordered,int stock, double shippingCharge){
 
+    //Declare variables
+    double bkOrder, spoolsOrdered, spoolTotal, shipping, total;
+
+    cout << "**** Order Summary ****";
+    cout << "\n";
+
+    //Calculate backorders
+    bkOrder = ordered - stock;
+    if(bkOrder < 0){
+        bkOrder = 0;
+
+    }
+
+    cout << endl;
+    //Display spool ordered and back ordered
+    cout << "Spools ordered: " << ordered << "\n";
+    cout << "Spools back ordered: " << bkOrder << "\n";
+
 }
