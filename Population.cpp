@@ -74,3 +74,14 @@ void Population::setDeaths(double d)
     else
         numDeaths = 0;
 }
+
+int main(){
+
+    //Create population object
+    Population town;
+
+    //Create variables
+    long numPop;
+    double numBirths;
+    double numDeaths;
+}
