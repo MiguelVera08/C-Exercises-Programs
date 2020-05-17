@@ -66,3 +66,11 @@ void Population::setBirths(double b)
     else
         numBirths = 0;
 }
+
+void Population::setDeaths(double d)
+{
+    if (d >= 0)
+        numDeaths = d;
+    else
+        numDeaths = 0;
+}
