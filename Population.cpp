@@ -16,4 +16,23 @@ class Population{
         //constructors
         Pop();
         Pop(long, double, double);
+
+    //Mutator functions
+    void setPopulation(long p);
+    void setBirths(double b);
+    void setDeaths(double d);
+
+    //Accessor functions
+    long getPopulation()
+    {
+        return population;
+    }
+    double getBirthRate()
+    {
+        return numBirths/population;
+    }
+    double getDeathRate()
+    {
+        return numDeaths/population;
+    }
 };
