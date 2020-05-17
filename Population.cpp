@@ -50,3 +50,11 @@ Population::Pop(long p, double b, double d)
     setBirths(b);
     setDeaths(d);
 }
+
+void Population::setPopulation(long p)
+{
+    if (p >= 1)
+        population = p;
+    else
+        population = 0;
+}
