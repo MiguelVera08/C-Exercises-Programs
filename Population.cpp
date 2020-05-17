@@ -36,3 +36,17 @@ class Population{
         return numDeaths/population;
     }
 };
+
+Population::Pop()
+{
+    population = 2;
+    numBirths = 0;
+    numDeaths = 0;
+}
+
+Population::Pop(long p, double b, double d)
+{
+    setPopulation(p);
+    setBirths(b);
+    setDeaths(d);
+}
