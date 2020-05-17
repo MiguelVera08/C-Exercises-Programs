@@ -84,4 +84,15 @@ int main(){
     long numPop;
     double numBirths;
     double numDeaths;
+
+    //Get population from user
+    cout << "Enter total population: ";
+    cin >> numPop;
+
+    while (numPop < 1)
+    {
+        cout << "Number must be positive re-enter: ";
+        cin >> numPop;
+        cout << "\n";
+    }
 }
