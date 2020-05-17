@@ -58,3 +58,11 @@ void Population::setPopulation(long p)
     else
         population = 0;
 }
+
+void Population::setBirths(double b)
+{
+    if (b >= 0)
+        numBirths = b;
+    else
+        numBirths = 0;
+}
