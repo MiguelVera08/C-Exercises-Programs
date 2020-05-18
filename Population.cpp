@@ -120,4 +120,13 @@ int main(){
         cout << "\n";
     }
     town.setDeaths(numDeaths);
+
+    //Display calculated outputs
+    cout << "\nPopulation stats\n";
+    cout << fixed << showpoint << setprecision(3);
+    cout << "\nPopulation: " << setw(7) << town.getPopulation();
+    cout << "\nBirth Rate: " << setw(7) << town.getBirthRate();
+    cout << "\nDeath Rate: " << setw(7) << town.getDeathRate() << endl;
+
+    return 0;
 }
