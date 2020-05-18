@@ -107,5 +107,17 @@ int main(){
         cin >> numBirths;
         cout << "\n";
     }
+    town.setBirths(numBirths);
 
+    //Get annual deaths from user
+    cout << "Enter annual number of Deaths: ";
+    cin >> numDeaths;
+
+    while (numDeaths < 0)
+    {
+        cout << "Number must be positive re-enter: ";
+        cin >> numDeaths;
+        cout << "\n";
+    }
+    town.setDeaths(numDeaths);
 }
