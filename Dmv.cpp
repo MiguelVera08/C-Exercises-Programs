@@ -70,3 +70,14 @@ void TestGrader::grade(string test[]){
 
     cout << '\n';
 }
+
+int main(){
+    //Determine the correct exam answers
+    string answers[20]= {"B","D","A","A","C","A","B","A","C","D","B","C","D","A","D","C","C","B","D","A"};
+
+    //Create TestGrader class object
+    TestGrader test;
+
+    //Call set key function
+    test.setKey(answers);
+}
