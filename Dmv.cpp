@@ -25,7 +25,7 @@ void TestGrader::setKey(string correct[])
     }
 }
 
-//Function displays wether user failed or passed test and total number wrong/correct.
+//Function displays whether user failed or passed test and total number wrong/correct.
 
 void TestGrader::grade(string test[]){
 
@@ -44,5 +44,14 @@ void TestGrader::grade(string test[]){
         {
             wrong = wrong + 1;
         }
+    }
+
+    if (total >= 15)
+    {
+        cout << "\nYou passed the exam"<< endl;
+        cout << '\n';
+    }else{
+        cout << "You failed the exam"<< endl;
+        cout << '\n';
     }
 }
