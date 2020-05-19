@@ -98,6 +98,14 @@ int main(){
                 cin >> userTest[i];
             }
         }
+        //Call grade function
+        test.grade(userTest);
+
+        //Ask user if they would like to test another exam
+        cout<< endl << "Do you want enter another test? (Y or N)";
+        cin.clear();
+        cin >> choice;
+        cout << '\n';
     }
     while(choice == 'Y');
 
