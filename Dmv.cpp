@@ -54,4 +54,19 @@ void TestGrader::grade(string test[]){
         cout << "You failed the exam"<< endl;
         cout << '\n';
     }
+
+    cout << "Total correct: " << correct << "\nTotal wrong: " << wrong << endl;
+    cout << '\n';
+
+    //Count total number of questions wrong
+    cout << "Incorrect questions: ";
+    for (int i = 0; i < 20; i++)
+    {
+        if (test[i] != answers[i])
+        {
+            cout << i + 1 << " ";
+        }
+    }
+
+    cout << '\n';
 }
