@@ -80,4 +80,26 @@ int main(){
 
     //Call set key function
     test.setKey(answers);
+
+    string userTest[20];
+
+    char choice = 'Y';
+
+    //Get answers from user
+    do {
+        for (int i = 0; i < 20; i++) //use loop to go through questions 1-20
+        {
+            cout << "Enter answer for " << i + 1 << ":";
+            cin >> userTest[i];
+
+
+            while (userTest[i] > "D" || userTest[i] < "A") {
+                cout << "Enter choice between A-D: ";
+                cin >> userTest[i];
+            }
+        }
+    }
+    while(choice == 'Y');
+
+    return 0;
 }
