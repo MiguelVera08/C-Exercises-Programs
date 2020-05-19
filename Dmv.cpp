@@ -15,3 +15,12 @@ class TestGrader{
         void setKey(string []);
         void grade(string []);
 };
+
+//Function stores the correct answers
+void TestGrader::setKey(string correct[])
+{
+    for (int i = 0; i < 20; i++)
+    {
+        answers[i] = correct[i];
+    }
+}
