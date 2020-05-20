@@ -30,4 +30,11 @@ int main(){
     cout << "The names in sorted order are: \n\n";
     displayNames(name, SIZE);
     cout << "\n";
+
+    string nameID; //Holds the name being searched
+    int results; //Holds the search results
+
+    //Get name to search for from user
+    cout << "Enter the name you wish to search for: ";
+    getline(cin,nameID);
 }
