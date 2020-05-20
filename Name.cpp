@@ -22,4 +22,12 @@ int main(){
               "Allison, Jeff",  "Moreno, Juan", "Wolfe, Bill",    "Whitman, Jean",
               "Moretti, Bella", "Wu, Hong",     "Patel, Renee",   "Harrison, Rose",
               "Smith, Cathy",   "Conroy, Pat",  "Kelly, Sean",    "Holland, Beth" };
+
+    //Call function to sort the strings
+    selectionSort(name, SIZE);
+
+    //Call function to display the sorted strings
+    cout << "The names in sorted order are: \n\n";
+    displayNames(name, SIZE);
+    cout << "\n";
 }
