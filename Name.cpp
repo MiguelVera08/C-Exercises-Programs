@@ -74,5 +74,8 @@ void selectionSort(string names[], int size){
 
         }
 
+        names[minIndex] = names[startScan];
+        names[startScan] = minValue;
+
     }
 }
