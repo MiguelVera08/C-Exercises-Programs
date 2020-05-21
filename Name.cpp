@@ -79,3 +79,11 @@ void selectionSort(string names[], int size){
 
     }
 }
+
+//Function displays whats inside the array.
+void displayNames(const string names [], int size)
+{
+    for(int count=0;count < size; count++)
+        cout << names[count] << endl;
+
+}
