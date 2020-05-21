@@ -54,3 +54,13 @@ int main(){
     return 0;
 
 }
+//Function will sort the array in ascending order.
+void selectionSort(string names[], int size){
+
+    int startScan, minIndex;
+    string minValue;
+
+    for (startScan=0; startScan < (size - 1); startScan++){
+
+    }
+}
