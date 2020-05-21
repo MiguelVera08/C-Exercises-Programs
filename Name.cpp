@@ -61,6 +61,18 @@ void selectionSort(string names[], int size){
     string minValue;
 
     for (startScan=0; startScan < (size - 1); startScan++){
+        minIndex = startScan;
+        minValue = names[startScan];
+
+        for (int index = startScan + 1; index < size; index++)
+        {
+            if (names[index] < minValue)
+            {
+                minValue = names[index];
+                minIndex = index;
+            }
+
+        }
 
     }
 }
