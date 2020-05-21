@@ -37,4 +37,20 @@ int main(){
     //Get name to search for from user
     cout << "Enter the name you wish to search for: ";
     getline(cin,nameID);
+
+    //Search for the ID
+    results = binarySearch(name, SIZE, nameID);
+
+    //If search returns -1, name is not on list
+    if (results == -1)
+        cout<< "Name is not on the list. \n";
+    else
+
+    {
+        cout << "Name " << nameID << " was found in element "
+             << results << " of the array. \n";
+    }
+
+    return 0;
+
 }
