@@ -20,4 +20,10 @@ int main(){
     cout << "Enter the number of Scores:  ";
     cin >> numScores;
     cout << "\n";
+
+    //Dynamically allocate an array large enough to hold the scores
+    scores = new double[numScores];
+
+    //Get the individual scores from user
+    cout << "Enter the test scores. \n";
 }
