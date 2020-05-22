@@ -49,4 +49,12 @@ int main(){
     cout << "Scores entered: \n";
     showArray(scores, numScores);
     cout << "\n";
+
+    //Dispaly the scores in array ptr
+    selectionSort(scores, numScores);
+
+    //Display sorted scores
+    cout << "The sorted scores: \n";
+    showArray(scores, numScores);
+    cout << "\n";
 }
