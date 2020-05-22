@@ -99,5 +99,16 @@ int binarySearch (const string names[], int size, string value){
 
     while (!found && first <= last){
 
+        middle = (first + last) / 2;
+        if (names[middle] == value)
+        {
+            found = true;
+            position = middle;
+        }else if (names[middle] > value)
+            last = middle - 1;
+        else
+            first = middle + 1;
+
     }
+    return position;
 }
