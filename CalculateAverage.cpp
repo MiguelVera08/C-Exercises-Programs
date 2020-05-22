@@ -26,4 +26,17 @@ int main(){
 
     //Get the individual scores from user
     cout << "Enter the test scores. \n";
+
+    for (int count = 0; count < numScores; count++)
+    {
+        cout << "Test Score " << (count +1) << ": ";
+        cin >> *(scores + count);
+
+        //Validate input from user
+        while (*(scores + count) < 0)
+        {
+            cout <<"User must enter positive scores: ";
+            cin >> scores[count];
+        }
+    }
 }
