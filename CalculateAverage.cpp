@@ -15,4 +15,9 @@ int main(){
     total = 0.0,  //Accumulator
     average;      //Holds average scores
     int numScores;    //Holds number of scores
+
+    //Get number of scores from user
+    cout << "Enter the number of Scores:  ";
+    cin >> numScores;
+    cout << "\n";
 }
