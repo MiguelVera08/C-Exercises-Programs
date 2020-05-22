@@ -39,4 +39,14 @@ int main(){
             cin >> scores[count];
         }
     }
+    //Calculate the total of scores
+    for (int count = 0; count < numScores; count++)
+    {
+        total = total + *(scores+count);
+    }
+    //Display the unsorted scores
+    cout << "\n";
+    cout << "Scores entered: \n";
+    showArray(scores, numScores);
+    cout << "\n";
 }
