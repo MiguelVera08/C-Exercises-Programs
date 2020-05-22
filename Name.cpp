@@ -91,4 +91,13 @@ void displayNames(const string names [], int size)
 //function performs binary search for name the user is looking for
 int binarySearch (const string names[], int size, string value){
 
+    int first = 0,
+            last = size -1,
+            middle,
+            position = -1;
+    bool found = false;
+
+    while (!found && first <= last){
+
+    }
 }
