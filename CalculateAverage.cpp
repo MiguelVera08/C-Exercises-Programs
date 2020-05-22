@@ -9,3 +9,10 @@ void selectionSort (double *, int);
 void showArray (double *, int);
 void scoreAverage (double, int);
 
+int main(){
+
+    double *scores = nullptr,   //Dynamically allocate an array
+    total = 0.0,  //Accumulator
+    average;      //Holds average scores
+    int numScores;    //Holds number of scores
+}
