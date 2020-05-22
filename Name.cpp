@@ -87,3 +87,8 @@ void displayNames(const string names [], int size)
         cout << names[count] << endl;
 
 }
+
+//function performs binary search for name the user is looking for
+int binarySearch (const string names[], int size, string value){
+
+}
