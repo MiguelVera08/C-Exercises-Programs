@@ -89,3 +89,11 @@ void selectionSort(double *scores, int size){
         *(scores+startScan) = minValue;
     }
 }
+
+//Function displays the scores inputed by user
+void showArray(double *scores, int size)
+{
+    for (int count = 0; count < size; count++)
+        cout << *(scores + count) << " ";
+    cout << endl;
+}
