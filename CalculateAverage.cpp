@@ -57,4 +57,13 @@ int main(){
     cout << "The sorted scores: \n";
     showArray(scores, numScores);
     cout << "\n";
+
+    //Call average function
+
+    scoreAverage(total, numScores);
+
+    //Free dynamically allocated memory}
+    delete scores;
+    scores = nullptr;
+    return 0;
 }
