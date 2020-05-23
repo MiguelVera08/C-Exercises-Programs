@@ -97,3 +97,17 @@ void showArray(double *scores, int size)
         cout << *(scores + count) << " ";
     cout << endl;
 }
+
+//Function calculates average of scores inputed
+void scoreAverage(double total, int numScores)
+{
+    double average;
+
+    //Calculate average
+    average = total / numScores;
+
+    //Display the average score
+    cout << fixed << showpoint << setprecision(1);;
+    cout << "The average is: " << average << endl;
+
+}
