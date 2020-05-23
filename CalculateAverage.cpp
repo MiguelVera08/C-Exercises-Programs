@@ -74,6 +74,18 @@ void selectionSort(double *scores, int size){
     int startScan, minIndex, minValue;
 
     for (startScan = 0; startScan < (size-1); startScan++){
+        minIndex = startScan;
+        minValue = *(scores + startScan);
 
+        for (int index =startScan + 1; index < size; index++)
+        {
+            if (*(scores+index) < minValue)
+            {
+                minValue = *(scores + index);
+                minIndex = index;
+            }
+        }
+        *(scores+minIndex) = *(scores+startScan);
+        *(scores+startScan) = minValue;
     }
 }
