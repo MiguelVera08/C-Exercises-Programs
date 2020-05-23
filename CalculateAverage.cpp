@@ -67,3 +67,13 @@ int main(){
     scores = nullptr;
     return 0;
 }
+
+//Function sorts the scores in ascending order
+void selectionSort(double *scores, int size){
+
+    int startScan, minIndex, minValue;
+
+    for (startScan = 0; startScan < (size-1); startScan++){
+
+    }
+}
