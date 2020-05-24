@@ -20,3 +20,9 @@ void DivisionSales::setQuarters(double quarter1, double quarter2, double quarter
     //Add subtotal values for each division
     total = quarter1 + quarter2 + quarter3 +quarter4;
 };
+
+//Array will return the value of element in the subscript.
+double DivisionSales::getQuarters(int quarter)
+{
+    return quarters[quarter];
+}
