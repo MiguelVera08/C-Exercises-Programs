@@ -26,3 +26,9 @@ double DivisionSales::getQuarters(int quarter)
 {
     return quarters[quarter];
 }
+
+//Returns the total of the sales
+double DivisionSales::getTotalSales()
+{
+    return totalSales;
+}
