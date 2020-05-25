@@ -32,4 +32,14 @@ int main(){
     //Display results
     cout << "\nSales Report\n";
     cout << fixed << setprecision(2) << showpoint;
+    for(int count = 0; count < 6; count++)
+    {
+        cout << "Sales for Division " << (count + 1) << "\t" << endl;
+        for (int test =0; test < 4; test++)
+        {
+            cout << "\tQuarter " << (test+1) << ": $" << div[count].getQuarters(test) << endl;
+        }
+        cout << "\tDivision subtotal " <<  div[count].total << "\t" << "\t" << endl;
+        cout << "\n" << endl;
+    }
 }
