@@ -24,6 +24,12 @@ int main(){
                 cout << "Enter positive sales data: ";
                 cin >> qSale[i];
             }
+
         }
+        //Store the values into DivSales div array
+        div[count].setQuarters( qSale[0], qSale[1], qSale[2], qSale[3]);
     }
+    //Display results
+    cout << "\nSales Report\n";
+    cout << fixed << setprecision(2) << showpoint;
 }
