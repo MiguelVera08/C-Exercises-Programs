@@ -17,6 +17,13 @@ int main(){
         for(int i = 0; i < 4; i++){
             cout << "\t" << "Quarter " << (i + 1) << ": ";
             cin >> qSale[i];
+
+            //Input validation for only postive numbers
+            while (qSale[i] < 0)
+            {
+                cout << "Enter positive sales data: ";
+                cin >> qSale[i];
+            }
         }
     }
 }
