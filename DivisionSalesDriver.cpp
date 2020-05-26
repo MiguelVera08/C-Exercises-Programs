@@ -42,4 +42,11 @@ int main(){
         cout << "\tDivision subtotal " <<  div[count].total << "\t" << "\t" << endl;
         cout << "\n" << endl;
     }
+    //Calculate the highest subtotal of the six divisions
+    double i = div[0].total;
+    for (int count =1; count < 6; count++)
+    {
+        if (div[count].total > i)
+            i = div[count].total;
+    }
 }
