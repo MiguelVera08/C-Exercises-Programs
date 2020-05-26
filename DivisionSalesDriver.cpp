@@ -49,4 +49,11 @@ int main(){
         if (div[count].total > i)
             i = div[count].total;
     }
+    //Calculate the lowest subtotal of the six divisions
+    double x = div[0].total;
+    for (int count = 1; count < 6; count++)
+    {
+        if (div[count].total < x )
+            x = div[count].total;
+    }
 }
