@@ -56,4 +56,12 @@ int main(){
         if (div[count].total < x )
             x = div[count].total;
     }
+
+    cout << "\nHighest Division sales amount: $ " << i << endl;
+    cout << "\nLowest Division sales amount: $ " <<
+         x << endl;
+    cout << "\nTotal Corporate Sales: $ " << DivisionSales::getTotalSales() << endl;
+
+
+    return 0;
 }
