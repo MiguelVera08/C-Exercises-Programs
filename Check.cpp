@@ -30,4 +30,7 @@ void Check::display() {
                        "eight",   "nine",      "ten",      "eleven",
                        "twelve",  "thirteen",  "fourteen", "fifteen",
                        "sixteen", "seventeen", "eighteen", "nineteen"};
+
+    string tens[10] = {"zero", "ten",   "twenty",  "thirty", "forty",
+                       "fifty", "sixty", "seventy", "eighty", "ninety"};
 }
