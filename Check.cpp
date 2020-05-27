@@ -21,3 +21,13 @@ public:                    //Member function Prototypes
 
     void display();
 };
+
+void Check::display() {
+
+    int buffer;
+    string ones[20] = {"zero",       "one",       "two",      "three",
+                       "four",    "five",      "six",      "seven",
+                       "eight",   "nine",      "ten",      "eleven",
+                       "twelve",  "thirteen",  "fourteen", "fifteen",
+                       "sixteen", "seventeen", "eighteen", "nineteen"};
+}
