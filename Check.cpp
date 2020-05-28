@@ -37,7 +37,11 @@ void Check::display() {
     buffer = amount/1000;
     if (buffer > 0)
         cout << " " << ones[buffer] << " thousand " ;
-    amount = amount % 1000;
-    if (amount == 0)
-        cout << tens[buffer] << " ";
+        amount = amount % 1000;
+        if (amount == 0)
+            cout << tens[buffer] << " ";
+        buffer = amount/100;
+    if (buffer > 0)
+        cout << ones[buffer] << " hundred ";
+        amount = amount % 100;
 }
