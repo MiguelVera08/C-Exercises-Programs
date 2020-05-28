@@ -44,4 +44,9 @@ void Check::display() {
     if (buffer > 0)
         cout << ones[buffer] << " hundred ";
         amount = amount % 100;
+        if (amount >=20)
+        {
+            buffer = amount / 10;
+            if (buffer < 10)
+                cout << tens[buffer] << " ";
 }
