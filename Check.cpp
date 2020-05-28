@@ -59,3 +59,16 @@ void Check::display() {
             cout << ones[amount];
             cout << " ";
 }
+
+//main
+int main(){
+
+    //Creat Variables to store input from user
+    string date;
+    double check_amount;
+    string payee;
+    string address;
+    string check_number;
+    string memo;
+    char again = 'y';
+}
