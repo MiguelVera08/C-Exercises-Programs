@@ -92,6 +92,17 @@ int main(){
         //Check amount
         cout << "\nEnter the amount: ";
         cin >> check_amount;
+
+        //Inpute validation for check amount.
+        while (((check_amount < 0) || (check_amount > 10000)) || (cin.fail()))
+        {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Amount must be positive and between 0 and 10,000: \n";
+            cout << "Enter a valid amount: ";
+            cin >> check_amount;
+            cout << "\n";
+        }
     }
 
 }
