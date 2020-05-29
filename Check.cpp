@@ -71,4 +71,15 @@ int main(){
     string check_number;
     string memo;
     char again = 'y';
+
+    do {
+        //Get input from user
+        cout <<  "\nEnter the date (Month/Day/Year): ";
+        cin >> date;
+        fflush (stdin);
+        //Name of payee
+        cout << "\nEnter the payee: ";
+        getline (cin, payee);
+    }
+
 }
