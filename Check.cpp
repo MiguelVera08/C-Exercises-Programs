@@ -80,6 +80,12 @@ int main(){
         //Name of payee
         cout << "\nEnter the payee: ";
         getline (cin, payee);
+        //Address
+        cout << "\nEnter the address of payee: ";
+        getline (cin, address);
+        //Check number
+        cout << "\nEnter the check number: ";
+        getline (cin, check_number);
     }
 
 }
