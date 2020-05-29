@@ -86,6 +86,12 @@ int main(){
         //Check number
         cout << "\nEnter the check number: ";
         getline (cin, check_number);
+        //Memo for check
+        cout << "\nEnter the memo for the check: ";
+        getline (cin, memo);
+        //Check amount
+        cout << "\nEnter the amount: ";
+        cin >> check_amount;
     }
 
 }
