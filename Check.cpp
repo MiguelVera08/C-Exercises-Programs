@@ -111,6 +111,17 @@ int main(){
         int one = (check_amount)-((thousand * 1000) + (hundred * 100) + (ten * 10));
         int t_alt = ((ten * 10) + one);
         int cents = (check_amount * 100) - ((thousand * 100000) + (hundred * 10000) + (ten * 1000) + (one * 100));
+
+        //Output
+        cout << "\n\n\n" << endl;
+        cout << fixed << showpoint << setprecision(2);
+        cout << address;
+        cout << setw(60) << right << check_number << endl;
+        cout << "\n";
+        cout << setw(60) << right;
+        cout << "Date:" << date << endl;
+        cout << "Pay to the Order of: " << payee << "\t\t\t\t";
+        cout << " " << " $" << check_amount << endl;
     }
 
 }
