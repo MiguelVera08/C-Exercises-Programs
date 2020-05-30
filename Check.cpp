@@ -122,6 +122,13 @@ int main(){
         cout << "Date:" << date << endl;
         cout << "Pay to the Order of: " << payee << "\t\t\t\t";
         cout << " " << " $" << check_amount << endl;
+
+        if (check_amount >= 0)
+        {
+            Check check(check_amount);
+            check.display();
+            cout << "dollars and " << cents << " cents" << endl;
+        }
     }
 
 }
