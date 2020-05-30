@@ -103,6 +103,14 @@ int main(){
             cin >> check_amount;
             cout << "\n";
         }
+
+        //Calculate cents
+        int thousand = check_amount / 1000;
+        int hundred = (check_amount / 100) - (thousand * 10);
+        int ten = (check_amount / 10) - ((thousand * 100) + (hundred * 10));
+        int one = (check_amount)-((thousand * 1000) + (hundred * 100) + (ten * 10));
+        int t_alt = ((ten * 10) + one);
+        int cents = (check_amount * 100) - ((thousand * 100000) + (hundred * 10000) + (ten * 1000) + (one * 100));
     }
 
 }
