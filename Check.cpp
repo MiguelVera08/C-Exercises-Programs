@@ -129,6 +129,12 @@ int main(){
             check.display();
             cout << "dollars and " << cents << " cents" << endl;
         }
-    }
+        //loop to ask user if they would like to input other check
 
+        cout << "\n Another check? (Y/N): ";
+        cin >> again;
+        cin.get();
+        } while (toupper(again) == 'Y');
+
+        return 0;
 }
