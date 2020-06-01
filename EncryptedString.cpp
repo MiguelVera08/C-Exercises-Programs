@@ -6,5 +6,41 @@ using namespace std;
 void EncryptedString::set(string aString){
 
     myString = "";
+    // encrypt each character and add myString
+    for(int i=0; i<aString.length(); i++){
+
+        char ch = aString[i];
+
+        if (ch == 'Z')
+        {
+            ch = 'A';
+            myString += ch;
+        }
+        else if (ch == 'z')
+        {
+            ch = 'a';
+            myString += ch;
+        }
+        else if (isalpha(ch))
+        {
+            ch++;
+            myString += ch;
+        }
+        else if (ch == ' ')
+        {
+            myString += ch;
+        }
+        // else remove the character
+    }
+}
+
+// Method get - decrypt the string before returning
+string EncryptedString::get() const{
+
+    string resultString = "";
+    // encrypt each character and add myString
+    for(int i=0; i<myString.length(); i++){
+
+    }
 }
 
