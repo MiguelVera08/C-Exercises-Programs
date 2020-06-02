@@ -15,3 +15,14 @@ EncryptedString::EncryptedString(string aString)
 {
     return set(aString);
 }
+
+int main(){
+
+    EncryptedString str1;
+    cout << "Empty string not encrypted: " << EncryptedString::str1.get() << endl;
+    cout << "Empty string     encrypted: " << EncryptedString::getEncrypted() << endl << endl;
+
+    str1.set("abcd");
+    cout << "'abcd' not encrypted: " << EncryptedString::str1.get() << endl;
+    cout << "'abcd'     encrypted: " << EncryptedString::str1.getEncrypted() << endl << endl;
+}

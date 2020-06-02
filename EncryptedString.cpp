@@ -65,7 +65,7 @@ string EncryptedString::get() const{
     return resultString;
 }
 
-// Methid getEncrypted - return a copy of the encrypted string
+// Method getEncrypted - return a copy of the encrypted string
 string EncryptedString::getEncrypted() const
 {
     return myString;
