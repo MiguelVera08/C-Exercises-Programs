@@ -25,4 +25,12 @@ int main(){
     str1.set("abcd");
     cout << "'abcd' not encrypted: " << EncryptedString::str1.get() << endl;
     cout << "'abcd'     encrypted: " << EncryptedString::str1.getEncrypted() << endl << endl;
+
+    EncryptedString str2("Hi Mom!");
+    cout << "'Hi Mom!' not encrypted: " << EncryptedString::str2.get() << endl;
+    cout << "'Hi Mom!'     encrypted: " << EncryptedString::str2.getEncrypted() << endl;
+    cout << "Note: '!' is illegal and is removed" << endl;
+
+    return 0;
+
 }
