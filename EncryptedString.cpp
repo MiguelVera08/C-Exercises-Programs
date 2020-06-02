@@ -40,7 +40,28 @@ string EncryptedString::get() const{
     string resultString = "";
     // encrypt each character and add myString
     for(int i=0; i<myString.length(); i++){
+        char ch = myString[i];
 
+        if (ch == 'A')
+        {
+            ch = 'Z';
+            resultString += ch;
+        }
+        else if (ch == 'a')
+        {
+            ch = 'z';
+            resultString += ch;
+        }
+        else if (isalpha(ch))
+        {
+            ch--;
+            resultString += ch;
+        }
+        else if (ch == ' ')
+        {
+            resultString += ch;
+        }
     }
+    return resultString;
 }
 
