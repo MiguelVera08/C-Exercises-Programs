@@ -32,5 +32,10 @@ int main(){
         blank << child;
         blank.close();
     }
+    else
+    {
+    cout << "Cannot open file. \n";
+    }
+    return 0;
 }
 
