@@ -25,6 +25,12 @@ int main(){
             final = final + "\n";
 
         }
+        filename.close();
+        string child = printReverse(final);
+
+        ofstream blank("output.txt");
+        blank << child;
+        blank.close();
     }
 }
 
