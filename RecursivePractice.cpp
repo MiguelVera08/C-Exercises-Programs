@@ -10,5 +10,10 @@ using namespace std;
 string printReverse(string);
 
 
+int main(){
 
+    ifstream filename;
+    string str;
+    string final;
+}
 
