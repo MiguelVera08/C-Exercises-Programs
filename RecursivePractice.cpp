@@ -37,5 +37,17 @@ int main(){
     cout << "Cannot open file. \n";
     }
     return 0;
+
+    string printReverse(string final)
+    {
+        if( final == "")
+        {
+            return final;
+        }
+        else
+        {
+            return printReverse(final.substr(1))+final[0];
+        }
+    }
 }
 
