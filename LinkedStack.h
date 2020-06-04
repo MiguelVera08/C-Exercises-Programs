@@ -13,4 +13,13 @@ public:
     LinkedStack();                                   // Default constructor
     LinkedStack(const LinkedStack<ItemType>& aStack);// Copy constructor
     virtual ~LinkedStack();
+
+    // Stack operations:
+    bool isEmpty() const;
+    bool push(const ItemType& newItem);
+    bool pop();
+    ItemType peek() const;
 };
+
+#include "LinkedStack.cpp"
+#endif
