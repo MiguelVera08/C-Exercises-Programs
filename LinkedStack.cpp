@@ -55,3 +55,19 @@ LinkedStack<ItemType>::~LinkedStack()
     while (!isEmpty())
         pop();
 }  // end destructor
+
+template<class ItemType>
+bool LinkedStack<ItemType>::isEmpty() const
+{
+    return topPtr == nullptr;
+}
+
+template<class ItemType>
+bool LinkedStack<ItemType>::push(const ItemType& newItem)
+{
+    Node<ItemType>* newNodePtr = new Node<ItemType>(newItem, topPtr);
+    topPtr = newNodePtr;
+    newNodePtr = nullptr;
+
+    return true;
+}  // end push
