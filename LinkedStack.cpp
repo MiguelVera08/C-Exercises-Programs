@@ -71,3 +71,34 @@ bool LinkedStack<ItemType>::push(const ItemType& newItem)
 
     return true;
 }  // end push
+
+template<class ItemType>
+bool LinkedStack<ItemType>::pop()
+{
+    bool result = false;
+    if (!isEmpty())
+    {
+        // Stack is not empty; delete top
+        Node<ItemType>* nodeToDeletePtr = topPtr;
+        topPtr = topPtr->getNext();
+
+        // Return deleted node to system
+        nodeToDeletePtr->setNext(nullptr);
+        delete nodeToDeletePtr;
+        nodeToDeletePtr = nullptr;
+
+        result = true;
+    }  // end if
+
+    return result;
+}  // end pop
+
+template<class ItemType>
+ItemType LinkedStack<ItemType>::peek() const
+{
+    assert(!isEmpty());  // Enforce precondition
+
+    // Stack is not empty; return top
+    return topPtr->getItem();
+}  // end peek
+// End of implementation file.
