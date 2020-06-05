@@ -44,6 +44,14 @@ LinkedStack<ItemType>::LinkedStack(const LinkedStack<ItemType>& aStack){
             // Advance original-chain pointer
             origChainPtr = origChainPtr->getNext();
         }
+        newChainPtr->setNext(nullptr);           // Flag end of chain
     }
-
 }
+
+template<class ItemType>
+LinkedStack<ItemType>::~LinkedStack()
+{
+    // Pop until stack is empty
+    while (!isEmpty())
+        pop();
+}  // end destructor
