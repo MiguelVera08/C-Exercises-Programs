@@ -29,6 +29,20 @@ LinkedStack<ItemType>::LinkedStack(const LinkedStack<ItemType>& aStack){
         // Copy remaining nodes
         while (origChainPtr != nullptr){
 
+            // Get next item from original chain
+            ItemType nextItem = origChainPtr->getItem();
+
+            // Create a new node containing the next item
+            Node<ItemType>* newNodePtr = new Node<ItemType>(nextItem);
+
+            // Link new node to end of new chain
+            newChainPtr->setNext(newNodePtr);
+
+            // Advance pointer to new last node
+            newChainPtr = newChainPtr->getNext();
+
+            // Advance original-chain pointer
+            origChainPtr = origChainPtr->getNext();
         }
     }
 
