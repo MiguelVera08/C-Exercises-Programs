@@ -19,6 +19,17 @@ LinkedStack<ItemType>::LinkedStack(const LinkedStack<ItemType>& aStack){
         // Copy first node
         topPtr = new Node<ItemType>();
         topPtr->setItem(origChainPtr->getItem());
+
+        // Point to last node in new chain
+        Node<ItemType>* newChainPtr = topPtr;
+
+        // Advance original-chain pointer
+        origChainPtr = origChainPtr->getNext();
+
+        // Copy remaining nodes
+        while (origChainPtr != nullptr){
+
+        }
     }
 
 }
