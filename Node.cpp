@@ -29,3 +29,9 @@ void Node<ItemType>::setNext(Node<ItemType>* nextNodePtr)
 {
     next = nextNodePtr;
 } // end setNext
+
+template<class ItemType>
+ItemType Node<ItemType>::getItem() const
+{
+    return item;
+} // end getItem
