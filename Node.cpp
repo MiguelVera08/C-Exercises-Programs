@@ -24,3 +24,8 @@ void Node<ItemType>::setItem(const ItemType& anItem)
     item = anItem;
 } // end setItem
 
+template<class ItemType>
+void Node<ItemType>::setNext(Node<ItemType>* nextNodePtr)
+{
+    next = nextNodePtr;
+} // end setNext
