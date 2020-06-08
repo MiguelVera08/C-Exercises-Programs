@@ -17,3 +17,10 @@ Node<ItemType>::Node(const ItemType& anItem, Node<ItemType>* nextNodePtr) :
         item(anItem), next(nextNodePtr)
 {
 } // end constructor
+
+template<class ItemType>
+void Node<ItemType>::setItem(const ItemType& anItem)
+{
+    item = anItem;
+} // end setItem
+
