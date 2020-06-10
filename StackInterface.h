@@ -20,4 +20,11 @@ public:
     has been removed.
     @return True if the removal is successful or false if not. */
     virtual bool pop() = 0;
+
+    /** Returns the top of this stack.
+    @pre The stack is not empty.
+    @post The top of the stack has been returned, and
+    the stack is unchanged.
+    @return The top of the stack. */
+    virtual ItemType peek() const = 0;
 };
