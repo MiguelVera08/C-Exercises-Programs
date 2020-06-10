@@ -14,4 +14,10 @@ public:
     @param newEntry The object to be added as a new entry.
     @return True if the addition is successful or false if not. */
     virtual bool push(const ItemType& newEntry) = 0;
+
+    /** Removes the top of this stack.
+    @post If the operation was successful, the top of the stack
+    has been removed.
+    @return True if the removal is successful or false if not. */
+    virtual bool pop() = 0;
 };
