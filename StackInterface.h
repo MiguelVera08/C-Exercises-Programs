@@ -27,4 +27,7 @@ public:
     the stack is unchanged.
     @return The top of the stack. */
     virtual ItemType peek() const = 0;
+
+    /** Destroys object and frees memory allocated by object. */
+    virtual ~StackInterface() {  }
 };
