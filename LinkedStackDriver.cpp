@@ -25,4 +25,17 @@ bool inputValidation(string &exp){
     int operate = 0;
     int operand = 0;
     int special = 0;
+
+    for (int x = 0; x < len; x++){
+        if (isOperator(exp[x]))                     //Counter to track the number of operaters in input
+        {
+            operate = operate + 1;
+            answer = true;
+        }
+        else if (isdigit(exp[x]))                  //Counter to track the number of integers in input
+        {
+            operand = operand + 1;
+            answer = true;
+        }
+    }
 }
