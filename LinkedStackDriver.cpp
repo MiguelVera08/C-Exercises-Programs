@@ -37,5 +37,17 @@ bool inputValidation(string &exp){
             operand = operand + 1;
             answer = true;
         }
+        else if (isspace(exp[x]))
+        {
+            exp.erase(exp.begin()+(x));	           //Removes spaces from string
+            len -= 1;
+            x -= 1;
+            answer = true;
+        }
+        else if (isPara(exp[x]))
+        {
+            special = special + 1;
+            answer = true;
+        }
     }
 }
