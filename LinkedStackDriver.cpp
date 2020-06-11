@@ -10,3 +10,9 @@
 #include "LinkedStack.h"
 
 using namespace std;
+
+//Function Prototypes
+bool inputValidation(string &);
+bool isOperator(char);
+bool isPara(char);
+bool zeroDivide(int,int, char);
