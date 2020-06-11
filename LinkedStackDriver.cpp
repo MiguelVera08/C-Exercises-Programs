@@ -16,3 +16,13 @@ bool inputValidation(string &);
 bool isOperator(char);
 bool isPara(char);
 bool zeroDivide(int,int, char);
+
+//Function to validate input from user
+bool inputValidation(string &exp){
+
+    bool answer = false;
+    int len = exp.length();
+    int operate = 0;
+    int operand = 0;
+    int special = 0;
+}
