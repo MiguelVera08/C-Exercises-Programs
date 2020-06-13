@@ -50,16 +50,4 @@ bool inputValidation(string &exp){
             answer = true;
         }
     }
-    if (isOperator(exp[0]))
-    {
-        cout << "Malformed Expression, Invalid Postfix: ";
-        cout << '\n';
-        answer = false;
-    }
-    else if (isOperator(exp[1]))
-    {
-        cout << "Malformed Expression, Invalid Postfix: ";
-        cout << '\n';
-        answer = false;
-    }
 }
