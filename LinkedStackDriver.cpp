@@ -62,4 +62,16 @@ bool inputValidation(string &exp){
         cout << '\n';
         answer = false;
     }
+    else if(isdigit(exp.back()))
+    {
+        cout << "Malformed Expression, End cannot contain integer";
+        cout << '\n';
+        answer = false;
+    }
+    else if(operand != (operate + 1))
+    {
+        cout << "Malformed Expression, Invalid Operator Detected";
+        cout << '\n';
+        answer = false;
+    }
 }
