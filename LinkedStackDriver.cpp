@@ -82,3 +82,12 @@ bool inputValidation(string &exp){
     }
     return answer;
 }
+
+//Function to validate operator
+bool isOperator(char ch)
+{
+    if (ch=='+' || ch=='-' || ch=='*' || ch=='/')
+        return true;
+    else
+        return false;
+}
