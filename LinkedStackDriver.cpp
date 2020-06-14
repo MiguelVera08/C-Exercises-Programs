@@ -74,4 +74,11 @@ bool inputValidation(string &exp){
         cout << '\n';
         answer = false;
     }
+    else if (special)
+    {
+        cout << "Malformed Expression, Invalid Operator Detected";
+        cout << '\n';
+        answer = false;
+    }
+    return answer;
 }
