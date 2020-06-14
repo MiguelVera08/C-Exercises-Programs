@@ -91,3 +91,12 @@ bool isOperator(char ch)
     else
         return false;
 }
+
+//Function to validate for paranthesis
+bool isPara(char ch)
+{
+    if (ch=='(' || ch==')')
+        return true;
+    else
+        return false;
+}
