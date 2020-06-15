@@ -142,4 +142,15 @@ int main(){
     string buffer;
     int i,op1, op2, len, x;
     LinkedStack<int> s;
+
+    do
+    {
+        do{
+            //Get input from user
+            cout << "Enter a Postfix Expression: ( e.g. 2 3 + 4 * )\n";
+            getline(cin, exp);
+        }
+
+    }
+    return 0;
 }
