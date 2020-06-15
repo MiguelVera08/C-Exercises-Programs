@@ -121,3 +121,17 @@ int performOperation(int op1, int op2, char op)
     }
     return ans;
 }
+
+bool zeroDivide(int op1, int op2, char x)
+{
+    bool correct = true;                      //Validation so user cannot divide by zero
+    if (x == '/')
+    {
+        if (op1 == 0)
+        {
+            cout << "Cannot Divide by zero. ";
+            correct = false;
+            return correct;
+        }
+    }
+}
