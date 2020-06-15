@@ -135,3 +135,11 @@ bool zeroDivide(int op1, int op2, char x)
         }
     }
 }
+
+int main(){
+    char again;
+    string exp;
+    string buffer;
+    int i,op1, op2, len, x;
+    LinkedStack<int> s;
+}
