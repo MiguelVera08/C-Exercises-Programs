@@ -100,3 +100,24 @@ bool isPara(char ch)
     else
         return false;
 }
+
+//Function to calculate operation
+int performOperation(int op1, int op2, char op)
+{
+    int ans;
+    switch(op){
+        case '+':
+            ans = op2 + op1;
+            break;
+        case '-':
+            ans = op2 - op1;
+            break;
+        case '*':
+            ans = op2 * op1;
+            break;
+        case '/':
+            ans = op2 / op1;
+            break;
+    }
+    return ans;
+}
