@@ -153,37 +153,36 @@ int main(){
 
             //send input to get validated
             bool answer = inputValidation(exp);
-            if (answer)
-            {
-            len = exp.length();
-            for(i=0; i<len;i++) {
-                if(exp[i]>='0' && exp[i]<='9'){
-                    buffer = exp[i];
-                    x = stoi(buffer);
-                    s.push(x);
-                }
-                else if(isOperator(exp[i])){
-                    op1 = s.peek();
-                    s.pop();
-                    op2 = s.peek();
-                    s.pop();
-                    bool correct = zeroDivide(op1, op2, exp[i]);
-                    if (correct)
-                    {
-                        s.push(performOperation(op1, op2, exp[i]));
-                    }
-                    else
-                    {
-                        break;
+            if (answer) {
+                len = exp.length();
+                for (i = 0; i < len; i++) {
+                    if (exp[i] >= '0' && exp[i] <= '9') {
+                        buffer = exp[i];
+                        x = stoi(buffer);
+                        s.push(x);
+                    } else if (isOperator(exp[i])) {
+                        op1 = s.peek();
+                        s.pop();
+                        op2 = s.peek();
+                        s.pop();
+                        bool correct = zeroDivide(op1, op2, exp[i]);
+                        if (correct) {
+                            s.push(performOperation(op1, op2, exp[i]));
+                        } else {
+                            break;
+                        }
                     }
                 }
+                if (!s.isEmpty()) {
+                    cout << "Result: " << s.peek() << "\n";
+                    cout << '\n';
+                } else {
+                    cout << "Invalid expression. " << endl;
+                }
+                cout << "Would you like to calculate another expression? (Y/N): ";
+                cin >> again;
             }
-            if (!s.isEmpty())
-            {
-                cout << "Result: " << s.peek() << "\n";
-                cout << '\n';
-            }
-            }
+
 
 
     }
