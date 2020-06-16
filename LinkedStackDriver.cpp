@@ -182,9 +182,8 @@ int main(){
                 cout << "Would you like to calculate another expression? (Y/N): ";
                 cin >> again;
             }
-
-
-
-    }
+            cin.ignore();
+            cin.clear();
+    }while (toupper(again) == 'Y');
     return 0;
 }
