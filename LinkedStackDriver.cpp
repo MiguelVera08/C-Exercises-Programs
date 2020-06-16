@@ -163,10 +163,28 @@ int main(){
                     s.push(x);
                 }
                 else if(isOperator(exp[i])){
-
+                    op1 = s.peek();
+                    s.pop();
+                    op2 = s.peek();
+                    s.pop();
+                    bool correct = zeroDivide(op1, op2, exp[i]);
+                    if (correct)
+                    {
+                        s.push(performOperation(op1, op2, exp[i]));
+                    }
+                    else
+                    {
+                        break;
+                    }
                 }
             }
+            if (!s.isEmpty())
+            {
+                cout << "Result: " << s.peek() << "\n";
+                cout << '\n';
             }
+            }
+
 
     }
     return 0;
