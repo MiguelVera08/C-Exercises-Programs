@@ -149,7 +149,24 @@ int main(){
             //Get input from user
             cout << "Enter a Postfix Expression: ( e.g. 2 3 + 4 * )\n";
             getline(cin, exp);
-        }
+        } while (inputValidation(exp)== false);
+
+            //send input to get validated
+            bool answer = inputValidation(exp);
+            if (answer)
+            {
+            len = exp.length();
+            for(i=0; i<len;i++) {
+                if(exp[i]>='0' && exp[i]<='9'){
+                    buffer = exp[i];
+                    x = stoi(buffer);
+                    s.push(x);
+                }
+                else if(isOperator(exp[i])){
+
+                }
+            }
+            }
 
     }
     return 0;
