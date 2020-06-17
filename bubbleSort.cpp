@@ -31,3 +31,14 @@ void bubbleSort(ItemType theArray[], int n){
         pass++;
     }
 }
+
+//int main()
+//{
+// std::string a[6] = {"Z", "X", "R", "K", "F", "B"};
+//bubbleSort(a, 6);
+//for (int i = 0; i < 6; i++)
+//std::cout << a[i] << " ";
+//std::cout << std::endl;
+//}  // end main
+
+// Expected outcome B F K R X Z
