@@ -18,7 +18,16 @@ void bubbleSort(ItemType theArray[], int n){
         // and all of its entries are > the entries in theArray[0..n-pass]
         sorted = true; // Assume sorted
         for(int index = 0; index < n - pass; index++){
-
+            // At this point, all entries in theArray[0..index-1]
+            // are <= theArray[index]
+            int nextIndex = index + 1;
+            if (theArray[index] > theArray[nextIndex])
+            {
+                // Exchange entries
+                std::swap(theArray[index], theArray[nextIndex]);
+                sorted = false; // Signal exchange
+            } // end if
         }
+        pass++;
     }
 }
