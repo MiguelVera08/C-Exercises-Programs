@@ -10,6 +10,14 @@
 template<class ItemType>
 int findIndexOfLargest(const ItemType theArray[], int size);
 
+/** Sorts the items in an array into ascending order.
+ @pre  None.
+ @post  The array is sorted into ascending order; the size of the array
+    is unchanged.
+ @param theArray  The array to sort.
+ @param n  The size of theArray. */
+template<class ItemType>
+void selectionSort(ItemType theArray[], int n){
 
-
+}
 
