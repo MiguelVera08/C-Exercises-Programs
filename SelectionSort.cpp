@@ -35,3 +35,7 @@ void selectionSort(ItemType theArray[], int n){
     }
 } // end selection sort
 
+template<class ItemType>
+int findIndexOfLargest(const ItemType theArray[], int size){
+
+}
