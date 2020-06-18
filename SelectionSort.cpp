@@ -37,5 +37,13 @@ void selectionSort(ItemType theArray[], int n){
 
 template<class ItemType>
 int findIndexOfLargest(const ItemType theArray[], int size){
-
+    int indexSoFar = 0; // Index of largest entry found so far
+    for (int currentIndex = 1; currentIndex < size; currentIndex++)
+    {
+        // At this point, theArray[indexSoFar] >= all entries in
+        // theArray[0..currentIndex - 1]
+        if (theArray[currentIndex] > theArray[indexSoFar])
+            indexSoFar = currentIndex;
+    }  // end for
+    return indexSoFar; // Index of largest entry
 }
