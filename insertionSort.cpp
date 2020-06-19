@@ -19,3 +19,18 @@ void insertionSort(ItemType theArray[], int n);
 //std::cout << a[i] << " ";
 //std::cout << std::endl;
 //}  // end main
+
+template<class ItemType>
+void insertionSort(ItemType theArray[], int n){
+
+    // unsorted = first index of the unsorted region,
+    // loc = index of insertion in the sorted region,
+    // nextItem = next item in the unsorted region.
+    // Initially, sorted region is theArray[0],
+    // unsorted region is theArray[1..n-1].
+    // In general, sorted region is theArray[0..unsorted-1],
+    // unsorted region theArray[unsorted..n-1]
+    for (int unsorted = 1; unsorted < n; unsorted++){
+
+    }
+}
