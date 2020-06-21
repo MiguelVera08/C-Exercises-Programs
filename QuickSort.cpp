@@ -71,3 +71,18 @@ int sortFirstMiddleLast(ItemType theArray[], int first, int last)
 
     return mid;
 }  // end sortFirstMiddleLast
+
+/** Partitions the entries in an array about a pivot entry for quicksort.
+ @pre  theArray[first..last] is an array; first <= last.
+ @post  theArray[first..last] is partitioned such that:
+ S1 = theArray[first..pivotIndex-1] <= pivot
+ theArray[pivotIndex]          == pivot
+ S2 = theArray[pivotIndex+1..last]  >= pivot
+ @param theArray  The given array.
+ @param first  The first entry to consider in theArray.
+ @param last  The last entry to consider in theArray.
+ @return  The index of the pivot. */
+template<class ItemType>
+int partition(ItemType theArray[], int first, int last){
+
+}
