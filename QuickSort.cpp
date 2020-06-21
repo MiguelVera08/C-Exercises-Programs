@@ -85,4 +85,17 @@ int sortFirstMiddleLast(ItemType theArray[], int first, int last)
 template<class ItemType>
 int partition(ItemType theArray[], int first, int last){
 
+    // Choose pivot using median-of-three selection
+    int pivotIndex = sortFirstMiddleLast(theArray, first, last);
+
+    // Reposition pivot so it is last in the array
+    std::swap(theArray[pivotIndex], theArray[last - 1]);
+    pivotIndex = last - 1;
+    ItemType pivot = theArray[pivotIndex];
+
+    // Determine the regions S1 and S2
+    int indexFromLeft = first + 1;
+    int indexFromRight = last - 2;
+
+    bool done = false;
 }
