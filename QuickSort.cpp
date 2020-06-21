@@ -24,5 +24,19 @@ void insertionSort(ItemType theArray[], int first, int last)
     for (int unsorted = first + 1; unsorted <= last; unsorted++)
     {
 
+        // At this point, theArray[first..unsorted-1] is sorted.
+        // Find the right position (loc) in theArray[first..unsorted]
+        // for theArray[unsorted], which is the first entry in the
+        // unsorted region; shift, if necessary, to make room
+        ItemType nextItem = theArray[unsorted];
+        int loc = unsorted;
+        while ((loc > first) && (theArray[loc - 1] > nextItem))
+        {
+            // Shift theArray[loc - 1] to the right
+            theArray[loc] = theArray[loc - 1];
+            loc--;
+        }
+        // At this point, theArray[loc] is where nextItem belongs
+        theArray[loc] = nextItem; // Insert nextItem into sorted region
     }
 }
