@@ -40,3 +40,15 @@ void insertionSort(ItemType theArray[], int first, int last)
         theArray[loc] = nextItem; // Insert nextItem into sorted region
     }
 }
+
+/** Arranges two specified array entries into sorted order by
+ exchanging them, if necessary.
+ @param theArray  The given array.
+ @param i  The index of the first entry to consider in theArray.
+ @param j  The index of the second entry to consider in theArray. */
+template<class ItemType>
+void order(ItemType theArray[], int i, int j)
+{
+    if (theArray[i] > theArray[j])
+        std::swap(theArray[i], theArray[j]); // Exchange entries
+}  // end order
