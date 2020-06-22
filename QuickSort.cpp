@@ -52,3 +52,22 @@ void order(ItemType theArray[], int i, int j)
     if (theArray[i] > theArray[j])
         std::swap(theArray[i], theArray[j]); // Exchange entries
 }  // end order
+
+/** Arranges the first, middle, and last entry in an array in sorted order.
+ @pre  theArray[first..last] is an array; first <= last.
+ @post  theArray[first..last] is is arranged so that its
+ first, middle, and last entries are in sorted order.
+ @param theArray  The given array.
+ @param first  The first entry to consider in theArray.
+ @param last  The last entry to consider in theArray.
+ @return  The index of the middle entry. */
+template<class ItemType>
+int sortFirstMiddleLast(ItemType theArray[], int first, int last)
+{
+    int mid = first + (last - first) / 2;
+    order(theArray, first, mid); // Make theArray[first] <= theArray[mid]
+    order(theArray, mid, last);  // Make theArray[mid] <= theArray[last]
+    order(theArray, first, mid); // Make theArray[first] <= theArray[mid]
+
+    return mid;
+}  // end sortFirstMiddleLast
