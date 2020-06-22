@@ -123,4 +123,18 @@ int partition(ItemType theArray[], int first, int last){
     pivotIndex = indexFromLeft;
 
     return pivotIndex;
+
+}
+
+/** Sorts an array into ascending order. Uses the quick sort with
+ median-of-three pivot selection for arrays of at least MIN_SIZE
+ entries, and uses the insertion sort for other arrays.
+ @pre  theArray[first..last] is an array.
+ @post  theArray[first..last] is sorted.
+ @param theArray  The given array.
+ @param first  The first element to consider in theArray.
+ @param last  The last element to consider in theArray. */
+template<class ItemType>
+void quickSort(ItemType theArray[], int first, int last){
+
 }
