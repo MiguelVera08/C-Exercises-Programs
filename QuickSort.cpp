@@ -98,4 +98,29 @@ int partition(ItemType theArray[], int first, int last){
     int indexFromRight = last - 2;
 
     bool done = false;
+    while (!done)
+    {
+        // Locate first entry on left that is >= pivot
+        while (theArray[indexFromLeft] < pivot)
+            indexFromLeft = indexFromLeft + 1;
+
+        // Locate first entry on right that is <= pivot
+        while (theArray[indexFromRight] > pivot)
+            indexFromRight = indexFromRight - 1;
+
+        if (indexFromLeft < indexFromRight)
+        {
+            std::swap(theArray[indexFromLeft], theArray[indexFromRight]);
+            indexFromLeft = indexFromLeft + 1;
+            indexFromRight = indexFromRight - 1;
+        }
+        else
+            done = true;
+    }  // end while
+
+    // Place pivot in proper position between S1 and S2, and mark its new location
+    std::swap(theArray[pivotIndex], theArray[indexFromLeft]);
+    pivotIndex = indexFromLeft;
+
+    return pivotIndex;
 }
