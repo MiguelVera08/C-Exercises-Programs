@@ -136,5 +136,17 @@ int partition(ItemType theArray[], int first, int last){
  @param last  The last element to consider in theArray. */
 template<class ItemType>
 void quickSort(ItemType theArray[], int first, int last){
+    if (last - first + 1 < MIN_SIZE)
+    {
+        insertionSort(theArray, first, last);
+    }
+    else
+    {
+        // Create the partition: S1 | Pivot | S2
+        int pivotIndex = partition(theArray, first, last);
 
+        // Sort subarrays S1 and S2
+        quickSort(theArray, first, pivotIndex - 1);
+        quickSort(theArray, pivotIndex + 1, last);
+    }  // end if
 }
