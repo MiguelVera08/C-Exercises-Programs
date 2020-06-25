@@ -1,2 +1,1 @@
-"# C-Exercises-Programs" 
-"# C-Exercises-Programs" 
+Repo for C++ programming exercises and practice
