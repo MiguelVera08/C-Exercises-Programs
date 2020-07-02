@@ -36,3 +36,19 @@ string translateHundred (int hundred_chunk)
         int ones = hundred_chunk % 10;
         return tens_to_text[ tens ] + padIfNeeded( num_to_text[ ones ] );
 }
+
+string translateThousand (int thousand_chunk)
+{
+        if ( thousand_chunk < 100 )
+        {
+                return translateHundred( thousand_chunk );
+        }
+        else
+        {
+                int hundreds = thousand_chunk / 100;
+                int hundred_chunk = thousand_chunk % 100;
+                return num_to_text[ hundreds ] 
+                    + " hundred" 
+                    + padIfNeeded( translateHundred( hundred_chunk ) );
+        }
+}
