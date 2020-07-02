@@ -25,3 +25,14 @@ string padIfNeeded (string ans)
         }
         return " " + ans;
 }
+
+string translateHundred (int hundred_chunk)
+{
+        // handle special cases in the teens
+        if ( hundred_chunk < 20 ) {
+                return num_to_text[ hundred_chunk ];
+        }
+        int tens = hundred_chunk / 10;
+        int ones = hundred_chunk % 10;
+        return tens_to_text[ tens ] + padIfNeeded( num_to_text[ ones ] );
+}
