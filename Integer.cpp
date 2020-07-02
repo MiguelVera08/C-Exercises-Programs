@@ -52,3 +52,37 @@ string translateThousand (int thousand_chunk)
                     + padIfNeeded( translateHundred( hundred_chunk ) );
         }
 }
+
+int main()
+{
+        int n;
+        cin >> n;
+        string number;
+        bool is_negative = false;
+        if ( n < 0 ) 
+        {
+                is_negative = true;
+                n *= -1;
+        }
+
+        int chunk_count = 0;
+        while ( n > 0 )
+        {
+                if ( n % 1000 != 0 ) {
+                        number = translateThousand( n % 1000 ) 
+                            + padIfNeeded( power_to_text[ chunk_count ] 
+                            + padIfNeeded( number ) );
+                }
+                n /= 1000;
+                chunk_count++;
+        }       
+        if ( number == "" )
+        {
+                number = "zero";
+        }
+        if ( is_negative )
+        {
+                number = "negative " + number;
+        }
+        cout << number << endl;
+}
