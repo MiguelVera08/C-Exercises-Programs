@@ -14,3 +14,9 @@
 // 3.7 / 8.0 = 0.5                                                       
 // 5 / 8.0 = 0.6
 
+#include <iostream>
+#include <iomanip>   // formatting floating-point numbers with 1 decimal place
+using namespace std;
+
+
+
