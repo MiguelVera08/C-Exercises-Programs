@@ -36,3 +36,12 @@ int main(){
     cout<<"Sorry Number you entered is not an Armstrong number :("<<endl;
   return 0;
 }
+
+//If user input is Armstrong expected output
+//Enter a Number: 371
+//Your number is an Armstrong number!!!
+
+//If user input
+//Enter a Number: 342
+//Sorry Number you entered is not an Armstrong number :(
+
