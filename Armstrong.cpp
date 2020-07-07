@@ -26,5 +26,13 @@ int main(){
     
     sum = sum + (y*y*y);
     
+    x = x/10;
+    
   }
+  //Compare sum of the number inputed by user to see if input is an Armstrong number
+  if(temp == sum)
+    cout<<"Your number is an Armstrong number!!!"<<endl;
+  else
+    cout<<"Sorry Number you entered is not an Armstrong number :("<<endl;
+  return 0;
 }
