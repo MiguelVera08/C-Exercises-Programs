@@ -10,4 +10,14 @@ int main(){
   cout<<"enter the number of column=";    
   cin>>c;    
   cout<<"enter the first matrix element=\n";    
- 
+  for(i=0;i<r;i++){    
+    for(j=0;j<c;j++){    
+      cin>>a[i][j];  
+    }    
+  }    
+  cout<<"enter the second matrix element=\n";    
+  for(i=0;i<r;i++){    
+    for(j=0;j<c;j++){    
+      cin>>b[i][j];    
+    }    
+  }    
