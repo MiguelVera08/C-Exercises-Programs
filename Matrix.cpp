@@ -33,3 +33,18 @@ int main(){
     }   
     
   }
+//Testing examples
+//enter the number of row=3  
+//enter the number of column=3  
+//enter the first matrix element= 
+//1 2 3
+//1 2 3  
+//1 2 3       
+//enter the second matrix element= 
+//1 1 1  
+//2 1 2   
+//3 2 1    
+//multiply of the matrix=  
+//14 9 8      
+//14 9 8  
+//14 9 8
