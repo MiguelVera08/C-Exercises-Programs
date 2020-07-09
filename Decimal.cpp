@@ -6,7 +6,7 @@ using namespace std;
 
 
 int main(){
-  int x[10], y, z;
+  int x[10], y, i;
   
   cout <<"Enter a number to convert: ";
   
@@ -19,3 +19,10 @@ int main(){
   }
   
   cout <<"Your number in binary: ";
+  
+  for(i = i - 1; i >= 0; i--){
+    
+    cout << x[i];
+    
+  }
+}
