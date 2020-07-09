@@ -8,7 +8,7 @@ using namespace std;
 int main(){
   int x[10], y, i;
   
-  cout <<"Enter a number to convert: ";
+  cout <<"Enter a number to binary: ";
   
   cin>>y;
   for(i=0; y > 0; i++){
@@ -26,3 +26,7 @@ int main(){
     
   }
 }
+
+
+//Enter a number to convert to binary:
+//Your number in binary: 
