@@ -3,3 +3,19 @@
 
 #include <iostream>  
 using namespace std;
+
+
+int main(){
+  int x[10], y, z;
+  
+  cout <<"Enter a number to convert: ";
+  
+  cin>>y;
+  for(i=0; y > 0; i++){
+    
+    x[i] = y % 2;
+    
+    y = y / 2;
+  }
+  
+  cout <<"Your number in binary: ";
