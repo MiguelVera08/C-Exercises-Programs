@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){  
   int i,j,k,l,n;    
-  cout<<"Enter the Range=";    
+  cout<<"Enter a number: ";    
   cin>>n;
   for(i=1;i<=n;i++){
     
@@ -23,3 +23,12 @@ int main(){
   }    
   return 0;  
 }
+
+
+//Example output
+//Enter a number: 5
+//     1
+//    121
+//   12321
+//  1234321
+// 123454321
