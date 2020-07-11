@@ -23,3 +23,11 @@ int main()
     }    
 return 0;  
 }
+
+
+//Output
+//     A
+//    ABA
+//   ABCBA
+//  ABCDCBA
+// ABCDEDCBA
