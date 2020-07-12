@@ -14,3 +14,17 @@ float add(float a, float b){
 float sub(float a, float b){
   return a - b;
 }
+
+float multiply(float a, float b){
+  return a * b;
+}
+
+float divide(float a, float b){
+  
+  if(b !=0){
+    
+    return a / b;
+  }
+  std::cout << "You can't divide by 0. \n";
+  return 0;
+}
