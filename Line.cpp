@@ -4,3 +4,23 @@
 #include <iostream>
 
 using namespace std;
+
+
+
+int main(int argc, char* argv[]){
+  
+  if(argc!=2)
+	{
+		cout<<"Input should be of the form 'count filename.txt'";
+		return 1;
+	}
+	else{
+    ifstream input_file(argv[1]);
+		if(!input_file)
+		{
+			cout<<"File "<<argv[1]<<" does not exist";
+			return 0;
+		}
+		char c;
+  
+  
