@@ -22,5 +22,16 @@ int main(int argc, char* argv[]){
 			return 0;
 		}
 		char c;
-  
+  		int count = 0;
+		while(input_file.get(c))
+		{
+			if(c == '\n')
+			{
+				count++;
+			}
+		}
+		cout<<"Total lines in file: "<<count;
+	}
+	return 0;
+}
   
