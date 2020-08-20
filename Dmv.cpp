@@ -24,3 +24,25 @@ void TestGrader::setKey(string correct[])
         answers[i] = correct[i];
     }
 }
+
+//Function displays wether user failed or passed test and total number wrong/correct.
+
+void TestGrader::grade(string test[]){
+
+    int correct = 0;
+    int wrong = 0;
+    int total = 0;
+
+    for (int i=0; i<20; i++)
+    {
+        if (test[i] == answers[i])
+        {
+            correct = correct + 1;
+            total = total + 1;
+        }
+        else if (test[i] != answers[i])
+        {
+            wrong = wrong + 1;
+        }
+    }
+}
