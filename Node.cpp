@@ -35,3 +35,9 @@ ItemType Node<ItemType>::getItem() const
 {
     return item;
 } // end getItem
+
+template<class ItemType>
+Node<ItemType>* Node<ItemType>::getNext() const
+{
+    return next;
+} // end getNext
